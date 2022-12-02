@@ -1,0 +1,60 @@
+<!--
+    chamar 'index', por que é o arquivo que o navegador reconhece
+    o HTML serve para 3 coisas
+    1- mostrar conteudo
+    2- semantica
+    3- construção da estrutura do HTML(tornando mais semantica)
+-->
+
+<!-- QUALQUER COISA QUE N ENTENDER 'MDN "nome do código"'-->
+<!DOCTYPE html> <!--fala pro navegador usar a versão mais estável da linguagem-->
+<html lang="pt-BR">
+    <head>
+        <title lang="en">NEW EMPIRE</title>
+        <meta charset="utf-8"> <!--fala pro comp. pra usar a tabela 'utf-8' de caracteres-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        
+        <link rel="stylesheet" href="CSS/reset.css">
+            <!--
+                tira o css padrão do navegador, pois dependendo de onde a pessoa abrir o site, pode bagunçar o site
+                tem alguns mais elaborados no google
+            -->
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+
+
+
+
+
+    
+    <body>
+        <header> <!-- cabeçalho -->
+            <div class="logo">
+                <p class="texto">NEW</p>
+            </div>
+
+            <nav> <!--navegação-->
+                <a href="" lang="en"><span></span>Skills</a> <!--ancor(ancoragem)-->
+                <a href=""><span></span>Projetos</a>
+                <a href=""><span></span>Sobre</a>
+                <a href=""><span></span>Contatos</a>
+                <a id="button" href="" lang="en">Download CV</a>
+            </nav>
+        </header>
+        <!--
+            maneira de abreviar a escrita: 
+            header>img+nav>a*5 
+
+            e ainda:
+            header>img[width=60][heigth=60]+nav>a[lang=en]{Skill}+a{Projeto}+a{Sobre}+a{Contatos}+a[lang=en]{Download CV}
+
+            senão funcionar:
+            header>img[width=60][heigth=60]+nav
+            a[lang=en]{Skill}+a{Projeto}+a{Sobre}+a{Contatos}+a[lang=en]{Download CV}
+        -->
+    </body>
+</html>
