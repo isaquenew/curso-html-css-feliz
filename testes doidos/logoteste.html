@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+        <title>logo</title>
+        <style>
+            .logo{
+                background-image: url(https://farm66.staticflickr.com/65535/52530951958_db9b4a86dd_b.jpg);  
+                height: 300px;
+                width: 400px;
+                background-size:100% auto;
+             }
+          
+            .texto{
+                padding: 20px;
+                font-family:Arial;
+                text-align:center;
+                color:white;
+                opacity: 0;
+                transition: opacity .2s linear;
+                background-color:rgba(0,0,0,.7);
+            }
+          
+            .logo:hover .texto{
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="logo">
+            <div class="texto"><h2>NewEmpire</h2></div>
+          </div>
+    </body>
+</html>

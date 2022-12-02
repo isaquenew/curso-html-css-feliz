@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 10px solid yellow;
+    padding: 10px 20px;
+}
+
+.logo {
+    background-image: url(https://farm66.staticflickr.com/65535/52530951958_db9b4a86dd_b.jpg);  
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    background-size:100% auto;
+}
+
+.texto{
+    padding:10px;
+    font-family:Arial;
+    text-align: left;
+    color:rgb(7, 217, 245);
+    opacity:0;
+    transition: opacity .2s linear;
+    background-color:rgba(0,0,0,.7);
+}
+
+.logo:hover .texto{
+    opacity:1;
+}
+/*
+    .LOGO   .TEXTO      .LOGO:HOVER .TEXTO
+    tudo isso só pra colocar texto sobre a imagem quando
+    passar o mouse
+*/
+
+/*
+um px no css n é um px de vdd do monitor
+*/
+
+nav {
+    text-align: right;
+    /*
+            coloca a linha o máximo pra direita
+            tendo: right, center, left
+            e justify que deixa o bagui normal sem quebra 
+            de linha quando diminui o navegador
+    */
+}
+            
+a {
+    display: inline flex;
+    align-items: center;
+    /*
+        alinha verticalmente
+    */
+    color:rgb(7, 217, 245);
+    font-size:20px;
+    text-decoration: none; 
+    margin-right: 30px;
+    font-family:"Playfair Display", Arial, Helvetica, sans-serif;
+    /*
+        Como pegar qualquer fonte
+        -vá em 'https://fonts.google.com/'
+        -escolha uma fonte
+        -escolha o 'style' dela
+        -copie o link
+        -e cole no index antes do reset
+        -Por fim coloque o nome da fonte em 'font-family'...
+    */
+}
+
+a::before {
+    content: "";
+    /*
+        content: cria alguma
+        a::after cria aquela coisa no final do a
+        a::before cria aquela mesma coisa no inicio do a
+    */
+    color: yellow;
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+
+ #button {
+    background-color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    display: inline-block;
+    /*
+        pra permitir mudança em largura e altura
+        por que já de padrão a tag 'a' vem com display em inline
+        bloqueando a mudança de tamanho
+    */
+    height: 60px;
+    line-height: 60px;
+    /*
+        se pega o tamanho do 'height' e usa
+        o comando usara a altura do botão
+        centralizando o texto no meio do mesmo
+    */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow:5px 5px 0 rgb(255, 38, 0);
+    /*
+        10 - x direita
+        20 - y baixo
+        0 - esfumaça os pixel
+    */
+    transition: transform 100ms cubic-bezier(.45,.97,.68,2.48);
+    /*
+    é o que anima o transform
+    'cubic-bezier' é o estilo do movimento e os n° as coordenadas
+*/
+}
+
+#button:hover {
+    background-color: rgb(255, 174, 0);
+    transform: scale(1.05);
+}
