@@ -134,12 +134,32 @@ main {
     margin-left: 30px;
 }
 
-h1 {
+.all{
+    transition: transform 100ms
+}
+
+.na1 {
     color:rgb(238, 255, 0);
     font-size: 3em;
 }
 
-h2 {
+.sub1{
     color:rgb(0, 225, 255);
+}
+
+.sobre {
+    margin-top: 20px;
+    position: absolute;
+    color: rgb(29, 252, 0);
+    opacity: 0;
+    transition: opacity .5s initial;
+}
+
+.all:hover main {
+    padding-right: 350px;
+    padding-bottom: 300px;
+}
+.all:hover .sobre {
+    opacity: 1;
 }
 
